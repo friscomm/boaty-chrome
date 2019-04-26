@@ -1,20 +1,17 @@
 {
-
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "Boatify",
   "version": "1.0",
-
   "description": "Adds Boaty McBoatnet and an accompanying nautical theme to Igloo",
-
   "icons": {
-    "48": "icons/border-48.png"
+    "48": "icons/boatnet-bigger.png",
+    "128": "icons/boatnet-bigger.png"
   },
-
   "content_scripts": [
     {
       "matches": ["*://*.igloocommunities.com/*"],
       "js": ["boaty.js"]
     }
-  ]
-
+  ],
+  "permissions":  ["activeTab"]
 }
