@@ -7,6 +7,9 @@
     "48": "icons/boatnet-bigger.png",
     "128": "icons/boatnet-bigger.png"
   },
+  "web_accessible_resources": [
+    "images/*.jpg"
+  ],
   "content_scripts": [
     {
       "matches": ["*://*.igloocommunities.com/*"],

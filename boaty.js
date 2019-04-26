@@ -1,11 +1,12 @@
 let logo = document.getElementById('logo');
 let banner = logo.childNodes[0];
 let new_header1 = document.createTextNode('BOATY MCBOATNET');
-let image_url = browser.extension.getURL('images/boat.jpg');
+let image_url = chrome.runtime.getURL('images/boat.jpg');
 let new_img = document.createElement('IMG');
 let real_anchor = document.createElement('A');
 
-new_img.setAttribute('src', image_url) //= 'icons/border-48.png'
+// new_img.setAttribute('src', image_url)
+new_img.src = image_url
 new_img.style.height = '60px';
 real_anchor.setAttribute('href', '/')
 real_anchor.style.fontSize='34px'
